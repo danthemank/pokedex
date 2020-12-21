@@ -1,0 +1,195 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color:#FFFCEE;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.nav-bar-container {
+    height: 7vh;
+    width: 100vw;
+    background-color: #EF5350;
+    position: sticky;
+    top: 0;
+    left: 0;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.nav-bar {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    width: 150px;
+    cursor: pointer;
+}
+
+.search-bar {
+    border: none;
+    padding: 5.5px;
+    margin-right: 0; 
+    
+}
+
+.search-bar:focus {
+    
+    outline-color: #3761A8;
+    
+}
+
+.search-icon {
+    padding: 5px;
+    background-color: #FFCD00;
+    color: #406EBA;
+    margin-left: 0;
+    
+    cursor: pointer;
+    float: right;
+}
+
+.pokedex-container {
+    width: 880px;
+    
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+.pokemon-card {
+    background-color: #eee;
+    box-shadow: 0 5px 15px rgba(100, 100, 100, .5);
+    margin: 10px;
+    border-radius: 20px;
+    height: 300px;
+    width: 200px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.id {
+    background-color: white;
+    padding: 5px;
+    border-radius: 10px;
+    border: 1px solid black;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.img-container {
+    height: 150px;
+    width: 150px;
+    background-color: rgba(255, 255, 255, .5);
+    
+    border-radius: 50%;
+}
+
+.img-container img {
+    margin-top: 20px;
+    max-width: 90%;
+
+}
+
+.load-btns, .reset-btn-container {
+    width: 880px;
+    height: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.load-btn, .reset-btn {
+    font-size: 25px;
+    padding: 5px 10px;
+    background-color: #3761A8;
+    color: rgb(231, 230, 230);
+    outline: none;
+    border: none;
+    margin: 20px 0px;
+    cursor: pointer;
+    border-radius: 10px;
+    
+}
+
+.load-btn:hover, .reset-btn:hover {
+    background-color: #FFCD00;
+    color: #3761A8;
+    border: 1px solid #3761A8;
+}
+
+
+.show-card {
+    display: block;
+}
+
+.modal-container {
+    background-color: rgba(0, 0, 0, .8);
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.modal-card-container {
+    width: 900px;
+    height: 500px;
+    background-color: #FFFCEE;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.close-modal{
+    background-color: burlywood;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.line {
+   
+    width: 20px;
+    height: 2px;
+    background-color: black;
+}
+
+.line1 {
+    transform: rotate(45deg);
+}
+.line2 {
+    transform: rotate(-45deg);
+}
+
+.hide-card {
+    display: none;
+}
